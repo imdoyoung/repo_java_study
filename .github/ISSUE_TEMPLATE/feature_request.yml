@@ -1,0 +1,28 @@
+name: 기능 추가 요청
+description: 새로운 기능 제안 또는 개선 사항 요청
+title: '[Feature] '
+labels: [feature, enhancement]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: 설명
+      description: 어떤 기능을 추가하고 싶은지 구체적으로 작성해주세요.
+      placeholder: 예) 사용자가 프로필 사진을 업로드할 수 있는 기능 추가
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: 이유
+      description: 왜 이 기능이 필요한지 설명해주세요.
+      placeholder: 사용자 경험 개선, 운영 효율성 향상 등
+    validations:
+      required: true
+
+  - type: textarea
+    id: etc
+    attributes:
+      label: 기타 참고 사항
+      description: 관련 문서, 참고 링크 등을 남겨주세요 (선택)
